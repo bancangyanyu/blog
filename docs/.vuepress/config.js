@@ -1,7 +1,6 @@
 const nav = require('./config/nav.js');
-
 module.exports = {
-  title: "薄雾晚晴的个人博客",
+  title: "Bzyy Blog",
   description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
   // base: '/', // '/<github仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
@@ -14,7 +13,6 @@ module.exports = {
   markdown: {
     lineNumbers: true // 代码行号
   },
-
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
@@ -28,9 +26,7 @@ module.exports = {
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
-
     //*** 以下配置是Vdoing主题改动和新增的配置 ***//
-
     // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
     // tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
@@ -40,9 +36,9 @@ module.exports = {
       'http://www.obzhi.com/wp-content/uploads/2020/11/katongjianpan.png',
       'http://121.40.114.220/wp-content/uploads/2016/09/tiaoyueheise.jpg',
       'http://121.40.114.220/wp-content/uploads/2016/09/shibing.jpg',
-      'http://www.obzhi.com/wp-content/uploads/2020/10/tiaoya.png'
+      'http://www.obzhi.com/wp-content/uploads/2020/10/tiaoya.png' 
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
-    bodyBgImgOpacity: 0.7, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+    bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -65,9 +61,9 @@ module.exports = {
       link: 'https://github.com/bancangyanyu' // 可选的
     },
     blogger: { // 博主信息，显示在首页侧边栏
-      avatar: 'https://user-gold-cdn.xitu.io/2019/11/19/16e81cb2df256abd?imageView2/1/w/180/h/180/q/85/format/webp/interlace/1',
-      name: 'BZYY',
-      slogan: '前端搬砖工程师'
+      avatar: 'https://i.keaitupian.net/up/c8/bf/22/c8aebeb2ac5a09587cac2aa3bf22bfc8.jpg',
+      name: 'bzyy',
+      slogan: '前端搬砖工程师' 
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -90,7 +86,7 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
+      createYear: 2020, // 博客创建年份
       copyrightInfo: 'BZYY | <a href="https://github.com/bancangyanyu" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
   },
@@ -170,22 +166,22 @@ module.exports = {
       //     avatar: 'monsterid'
       //   }
       // },
-      // {
-      //   choosen: 'gitalk',
-      //   options: {
-      //     clientID: 'a6e1355287947096b88b',
-      //     clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-      //     repo: 'blog-gitalk-comment', // GitHub 仓库
-      //     owner: 'bzyy', // GitHub仓库所有者
-      //     admin: ['bzyy'], // 对仓库有写权限的人
-      //     // distractionFreeMode: true,
-      //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
-      //     id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-      //     title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-      //     labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-      //     body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-      //   }
-      // }
+      {
+        choosen: 'gitalk',
+        options: {
+          clientID: 'a6e1355287947096b88b',
+          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+          repo: 'blog-gitalk-comment', // GitHub 仓库
+          owner: 'bzyy', // GitHub仓库所有者
+          admin: ['bzyy'], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+          body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+        }
+      }
     ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
