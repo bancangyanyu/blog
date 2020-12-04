@@ -4,7 +4,11 @@
       to="/tags/"
       class="title iconfont icon-biaoqian1"
       title="全部标签"
-    >{{ length === 'all' ? '全部标签' : '热门标签' }}</router-link>
+    >
+    <span :style="{marginLeft:'3px'}">
+    {{ length === 'all' ? '全部标签' : '热门标签' }}
+    </span>
+    </router-link>
     <div class="tags">
       <template v-for="(item, index) in tags">
         <router-link

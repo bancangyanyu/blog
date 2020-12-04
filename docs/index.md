@@ -25,6 +25,22 @@ features: # 可选的
 # postList: detailed
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
 ---
+# 前端需要掌握的知识
+### JavaScript
+数据类型、运算、对象、 function、继承、闭包、作用域、事件、 prototype、RegExp、
+JSON、Ajax、DOM、BOM、内存泄漏、跨域、异步请求、模板引擎、模块化、Flux、
+同构、算法、ECMAScript6、Nodejs、HTTP
+
+### Html Css
+对web 标准的理解(结构/表现/行为)、浏览器内核、渲染原理、依赖管理、兼容性、
+CSS 语法、层次关系、常用属性、布局、 选择器、权重、盒模型、Hack、CSS 预处
+理器、 Flexbox、 CSS Modules、 Document flow、 BFC、 HTML5（离线&储存&history、
+多媒体、webGL、SVG、Cavas）
+ 
+### 其他
+主流 MVVM 框架(React\Vue\Angular)、Hybrid App\React Native\Weex、
+TypeScript、RESTFul、WEB 安全、前端工程化、依赖管理、性能优化、重构、团队协作、
+可维护、易用性、SEO、UED、前端技术选型、快速学习能力等；
 
 
 <!-- 小熊猫 -->

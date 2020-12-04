@@ -160,7 +160,7 @@ export default {
 
 <style lang='stylus'>
 .post-list
-  margin-bottom 4rem
+  margin-bottom 1rem
   .post
     position relative
     padding 1rem 1.5rem

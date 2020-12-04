@@ -13,8 +13,8 @@ module.exports = {
   markdown: {
     lineNumbers: true // 代码行号
   },
-  theme: 'vdoing', // 使用依赖包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  // theme: 'vdoing', // 使用依赖包主题
+  theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
   themeConfig: { // 主题配置
     nav,
@@ -33,12 +33,13 @@ module.exports = {
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      'http://www.obzhi.com/wp-content/uploads/2020/11/katongjianpan.png',
-      'http://121.40.114.220/wp-content/uploads/2016/09/tiaoyueheise.jpg',
-      'http://121.40.114.220/wp-content/uploads/2016/09/shibing.jpg',
-      'http://www.obzhi.com/wp-content/uploads/2020/10/tiaoya.png' 
+      'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017211426.jpg' ,
+      'https://cdn.jsdelivr.net/gh/kylincw/img/img/%E6%9A%97%E7%BA%A2%E5%9C%86.png',
+      'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017205047.jpg',
+      'https://cdn.jsdelivr.net/gh/kylincw/img/img/%E5%AE%87%E8%88%AA%E5%91%98.png',
+      'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017211233.jpg' 
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
-    bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+    bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标

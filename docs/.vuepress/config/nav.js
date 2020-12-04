@@ -5,9 +5,9 @@ module.exports = [
     link: '/web/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {text: '前端文章', items: [
-        {text: 'JavaScript', link: '/pages/88721431i3hkj3h12h312/'}, 
-        // 这些link是在相应md文件定义的永久链接。另外，注意结尾是有斜杠的
-        {text: 'Vue', link: '/pages/802a1ca6f7b71c59/'},
+        {text: 'JavaScript', link: '/pages/b55295/'}, 
+        {text: 'TypeScript', link: '/pages/c5c431/'}, 
+        {text: 'Vue', link: '/pages/aa90e0/'},
       ]}
     ]
   }, 

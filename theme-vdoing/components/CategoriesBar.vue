@@ -4,7 +4,10 @@
       to="/categories/"
       class="title iconfont icon-wenjianjia"
       title="全部分类"
-    >{{ length === 'all' ? '全部分类' : '文章分类' }}</router-link>
+    >
+    <span :style="{marginLeft:'3px'}">
+     {{ length === 'all' ? '全部分类' : '文章分类' }}
+    </span></router-link>
 
     <div class="categories">
       <router-link
