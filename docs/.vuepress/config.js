@@ -2,7 +2,7 @@ const nav = require('./config/nav.js');
 module.exports = {
   title: "Bzyy Blog",
   description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。', // 描述,以 <meta> 标签渲染到页面html中
-  // base: '/', // '/<github仓库名>/'， 默认'/'
+  base: '/bzyy_blog/', // '/<github仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown' }],
@@ -170,11 +170,11 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'bzyy', // GitHub仓库所有者
-          admin: ['bzyy'], // 对仓库有写权限的人
+          clientID: '7c161aa3901a69cc8a9f',
+          clientSecret: 'e13ca554d8a91b3b4b45a8e47f6b8916da2bc67d',
+          repo: 'bzyy_blog', // GitHub 仓库
+          owner: 'bancangyanyu', // GitHub仓库所有者 
+          admin: ['bancangyanyu'], // 对仓库有写权限的人 
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
@@ -183,7 +183,7 @@ module.exports = {
           body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
         }
       }
-    ],
+    ], 
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {

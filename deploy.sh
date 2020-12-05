@@ -10,10 +10,10 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'b.bzyy.com' > CNAME
+echo 'bancangyanyu.github.io/bzyy_blog/' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:bzyy/vuepress-theme-vdoing.git
+  githubUrl=git@github.com:bancangyanyu/bzyy_blog.git
 else
   msg='来自github actions的自动部署'
   # githubUrl=https://bzyy:${GITHUB_TOKEN}@github.com/bzyy/vuepress-theme-vdoing.git
@@ -26,7 +26,7 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
-echo 'www.bzyy.com\nbzyy.com' > CNAME  # 自定义域名
+echo 'www.bzyy.cn\bzyy.cn' > CNAME  # 自定义域名
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:xgy/xgy.git
 else
