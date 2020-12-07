@@ -17,7 +17,7 @@
         :href="item.link"
         :title="item.title"
         :class="['iconfont', item.iconClass]"
-        :style="{width: 100/social.icons.length + '%'}"
+        :style="{width: 100/social.icons.length + '%',fontSize:'30px'}"
         target="_blank"
       />
     </div>
@@ -49,6 +49,7 @@ export default {
     width 235px
     height 235px
     overflow hidden
+    
     @media (max-width 900px)
       width 205px
       height 205px
@@ -60,6 +61,7 @@ export default {
     border-top none
     height 40px
     line-height 40px
+    margin-top 5px
     a
       font-size 20px
       width 33%

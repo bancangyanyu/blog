@@ -1,0 +1,19 @@
+---
+title: 字符串字面量类型
+date: 2020-12-07 15:05:21
+permalink: /pages/f7febd/
+categories:
+  - 前端
+  - TypeScript文章
+tags:
+  - 
+---
+```TypeScript
+type EventNames = 'click' | 'scroll' | 'mousemove';
+function handleEvent(ele: Element, event: EventNames) {
+    // do something
+}
+
+handleEvent(document.getElementById('hello'), 'scroll');  // 没问题
+handleEvent(document.getElementById('world'), 'dblclick'); // 报错，event 不能为 'dblclick'
+```

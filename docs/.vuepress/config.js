@@ -33,10 +33,11 @@ module.exports = {
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     bodyBgImg: [
-      'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017211426.jpg' ,
-      'https://cdn.jsdelivr.net/gh/kylincw/img/img/%E6%9A%97%E7%BA%A2%E5%9C%86.png',
-      'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017205047.jpg',
-      'https://cdn.jsdelivr.net/gh/kylincw/img/img/%E5%AE%87%E8%88%AA%E5%91%98.png',
+      'https://cdn.jsdelivr.net/gh/bancangyanyu/image_cdn@main/image/B4855F2A-D104-4135-98F1-9195A4EB88F5.5notrzaw3ew0.jpeg' ,
+      'https://cdn.jsdelivr.net/gh/bancangyanyu/image_cdn@main/image/hongri.ae2wfdw1168.png',
+      'https://cdn.jsdelivr.net/gh/bancangyanyu/image_cdn@main/image/huojianfashe.6d2kmqrj6tc0.png',
+      'https://cdn.jsdelivr.net/gh/bancangyanyu/image_cdn@main/image/shouying.5g20iab31tk0.jpg',
+      'https://cdn.jsdelivr.net/gh/bancangyanyu/image_cdn@main/image/yuhangyuanjiusheng.37sopjazez00.jpg',
       'https://cdn.jsdelivr.net/gh/kylincw/img//img20201017211233.jpg' 
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 1, // body背景图透明度，选值 0 ~ 1.0, 默认0.5

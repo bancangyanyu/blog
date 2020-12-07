@@ -4,6 +4,6 @@
 
 基于 `vuepress-theme-vdoing` 的个人博客
 ## 项目地址
-[个人博客地址](https://bzyycn.cn/)
+[个人博客地址](https://bancangyanyu.github.io/bzyy_blog/)
 
-
+ 

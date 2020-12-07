@@ -15,7 +15,7 @@
       >
         <div class="title-wrapper">
           <h2>
-            <router-link :to="item.path">{{item.title}}</router-link>
+            <router-link :to="item.path" class="path">{{item.title}}</router-link>
           </h2>
           <div class="article-info">
             <a
@@ -44,6 +44,7 @@
               <router-link
                 :to="`/categories/?category=${encodeURIComponent(c)}`"
                 v-for="(c, index) in item.frontmatter.categories"
+                class="path"
                 :key="index"
               >{{c}}</router-link>
             </span>
@@ -56,6 +57,7 @@
                 :to="`/tags/?tag=${encodeURIComponent(t)}`"
                 v-for="(t, index) in item.frontmatter.tags"
                 :key="index"
+                class="path"
               >{{t}}</router-link>
             </span>
           </div>
@@ -70,7 +72,7 @@
           ></div>
           <router-link
             :to="item.path"
-            class="readmore iconfont icon-jiantou-you"
+            class="readmore iconfont icon-jiantou-you path"
           >阅读全文</router-link>
         </div>
       </div>
@@ -159,6 +161,8 @@ export default {
 </script>
 
 <style lang='stylus'>
+
+
 .post-list
   margin-bottom 1rem
   .post
@@ -166,6 +170,10 @@ export default {
     padding 1rem 1.5rem
     margin-bottom 0.9rem
     transition all 0.3s
+    &:hover 
+      transform: scale(1.01, 1.01);
+      &:after
+        transform:scale3d(1,1,1);
     &.post-leave-active
       display none
     &.post-enter
@@ -178,18 +186,54 @@ export default {
       font-size 2.5rem
       color $accentColor
       opacity 0.85
+    .path
+      color $accentColor
     .title-wrapper
+      
       a
         color var(--textColor)
+        width: 100%;
         &:hover
           color $accentColor
+          &:after{
+            /*鼠标经过时还原到正常比例*/
+            transform:scale3d(1,1,1);
+            color $accentColor
+          }
+
       h2
         margin 0.5rem 0
         font-size 1.4rem
         border none
+        position: relative
+        &:hover{
+          color $accentColor
+        }
         a
+          position: relative;
           @media (max-width $MQMobile)
             font-weight 400
+            &:hover
+              color $accentColor
+              &:after
+                /*鼠标经过时还原到正常比例*/
+                transform:scale3d(1,1,1);
+                color $accentColor
+          &:after
+              content ''
+              display block;
+              /*开始时候下划线的宽度为100%*/
+              width 100%;
+              height 3px;
+              position absolute;
+              bottom -10px;
+              background $accentColor;
+              transition all 0.3s ease-in-out;
+              /*通过transform的缩放scale来让初始时x轴为0*/
+              transform scale3d(0,1,1);
+              /*将坐标原点移到元素的中间，以原点为中心进行缩放*/
+              transform-origin 50% 0;
+           
       .article-info
         > a, > span
           opacity 0.7
