@@ -6,8 +6,8 @@ module.exports = [
     items: [
       {text: '前端文章', items: [
         {text: 'JavaScript', link: '/pages/b55295/'}, 
-        {text: 'TypeScript', link: '/pages/c5c431/'}, 
-        {text: 'Vue', link: '/pages/aa90e0/'},
+        {text: 'TypeScript', link: '/pages/c5c431/'},
+        {text: 'Vue', link: '/pages/cca291/'},
       ]}
     ]
   }, 
@@ -17,6 +17,14 @@ module.exports = [
     items: [
       {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
       {text: 'CSS', link: '/pages/0a83b083bdf257cb/'},
+    ]
+  },
+  {
+    text: '面试',
+    link: '/interview/',
+    items: [
+      {text: '知识点', link: '/pages/34b455/'}
+      // {text: '技巧', link: '/pages/34b455/'},
     ]
   },
   {
